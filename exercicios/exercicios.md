@@ -23,6 +23,11 @@ $ ssh -i devops-ninja.pem ubuntu@<ip>  - k8s-1         - HOST B
 $ ssh -i devops-ninja.pem ubuntu@<ip>  - k8s-2         - HOST C
 $ ssh -i devops-ninja.pem ubuntu@<ip>  - k8s-3         - HOST D
 
+ssh -i rancher-kubernetes.pem ubuntu@18.219.161.246 	- RancherServer	- 
+ssh -i rancher-kubernetes.pem ubuntu@3.141.103.237	- k8s-1		-
+ssh -i rancher-kubernetes.pem ubuntu@3.144.143.191	- k8s-2		-
+ssh -i rancher-kubernetes.pem ubuntu@18.188.143.238 	- k8s-3		-
+
 $ sudo su
 $ curl https://releases.rancher.com/install-docker/19.03.sh | sh
 $ usermod -aG docker ubuntu
